@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Mindmap правил waggl3_danc3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,7 +102,14 @@ dl.gl { margin: 0; display: grid; grid-template-columns: 1fr; gap: 0; background
 .empty { display: none; padding: 14px 4px; color: var(--muted); }
 .empty.on { display: block; }
 @media (prefers-reduced-motion: reduce) { .node summary::before { transition: none; } }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 @media (max-width: 520px) {
+  body { font-size: 16.5px; padding-inline: 14px; }
+  .bsub, .legend, .where, .foot { font-size: 14px; }
+  .g dd.ours { font-size: 15px; }
+  .g dd.ex { font-size: 15px; }
+  .exn, .exl { font-size: 12.5px; }
+  .bar button, .bar input { font-size: 16px; }
   .map { margin-left: 10px; padding-left: 14px; }
   .branch::before { left: -16px; width: 16px; }
   .cnt { display: none; }
@@ -251,3 +264,5 @@ dl.gl { margin: 0; display: grid; grid-template-columns: 1fr; gap: 0; background
   openHash();
 })();
 </script>
+
+</html>
